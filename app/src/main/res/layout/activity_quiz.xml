@@ -1,9 +1,127 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_quiz"
+    android:paddingRight="25dp"
+    android:paddingLeft="25dp"
     tools:context="com.madwak.kimondroid.QuizActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/titleQuiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Quiz"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_below="@id/titleQuiz"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Pertanyaan Pertanyaan Pertanyaan"
+        android:textSize="20dp"
+        android:gravity="center" />
+
+    <LinearLayout
+        android:id="@+id/answerRow1"
+        android:layout_below="@id/tvQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koloid"/>
+
+        <Button
+            android:id="@+id/btnAnswer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aerosol"/>
+
+        <Button
+            android:id="@+id/btnAnswer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buih"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow2"
+        android:layout_below="@id/answerRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adsorbsi"/>
+
+        <Button
+            android:id="@+id/btnAnswer5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koagulasi"/>
+
+        <Button
+            android:id="@+id/btnAnswer6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cara Kondensasi"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow3"
+        android:layout_below="@id/answerRow2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kondensasi dan Dispersi"/>
+
+        <Button
+            android:id="@+id/btnAnswer8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mekanik dan Kimia"/>
+
+        <Button
+            android:id="@+id/btnAnswer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efek Tyndall"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow4"
+        android:layout_below="@id/answerRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tinta"/>
+    </LinearLayout>
+
+</RelativeLayout>
