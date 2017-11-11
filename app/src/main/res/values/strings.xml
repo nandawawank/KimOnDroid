@@ -9,4 +9,35 @@
     <string name="sifat_koloid">Sifat-sifat koloid</string>
     <string name="materi_4">Materi 4</string>
     <string name="pembuatan_koloid">Pembuatan koloid</string>
+
+    <string-array name="materi_satu">
+        <item>
+            Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid
+            adalah sebagai berikut:
+            1. Industri kosmetika
+            Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.
+        </item>
+        <item>
+            2. Industri tekstil
+            Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan
+            zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.
+        </item>
+        <item>
+            3. Industri sabun dan deterjen
+            Sabun dan deterjen merupakan emulgator untuk membentuk emulsi antara kotoran (minyak) dengan air.
+        </item>
+        <item>
+            4. Kelestarian lingkungan
+            Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell.
+            Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari
+            cerobong asap pabrik.
+        </item>
+    </string-array>
+
+    <array name="gambar_satu">
+        <item>@drawable/imgmaterisatu</item>
+        <item>@drawable/imgmateridua</item>
+        <item>@drawable/imgmateritiga</item>
+        <item>@drawable/imgmateriempat</item>
+    </array>
 </resources>

@@ -26,7 +26,8 @@
         android:padding="10dp"
         android:drawableLeft="@drawable/materi"
         android:background="@color/colorAccent"
-        android:text="@string/materi_1"/>
+        android:text="@string/materi_1"
+        android:onClick="funcMateriOne"/>
 
     <ImageView
         android:id="@+id/right_icon"
@@ -59,13 +60,13 @@
         android:drawableLeft="@drawable/materi"
         android:background="@color/colorAccent"
         android:text="@string/meteri_2"
-        />
+        android:onClick="funcMateriTwo"/>
 
     <ImageView
         android:id="@+id/right_iconTwo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="80dp"
         android:layout_toRightOf="@id/buttonMateriTwo"
         android:layout_below="@id/right_icon"
@@ -94,13 +95,14 @@
         android:layout_below="@id/buttonMateriTwo"
         android:drawableLeft="@drawable/materi"
         android:background="@color/colorAccent"
-        android:text="@string/materi_3"/>
+        android:text="@string/materi_3"
+        android:onClick="funcMateriThre"/>
 
     <ImageView
         android:id="@+id/right_iconThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="80dp"
         android:layout_toRightOf="@id/buttonMateriThree"
         android:layout_below="@id/right_iconTwo"
@@ -130,13 +132,13 @@
         android:drawableLeft="@drawable/materi"
         android:background="@color/colorAccent"
         android:text="@string/materi_4"
-        />
+        android:onClick="funcMateriFour"/>
 
     <ImageView
         android:id="@+id/right_iconFour"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="35dp"
         android:layout_marginLeft="80dp"
         android:layout_toRightOf="@id/buttonMateriFour"
         android:layout_below="@id/right_iconThree"
@@ -154,5 +156,17 @@
         android:gravity="center_horizontal"
         android:text="@string/pembuatan_koloid"
         />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_marginLeft="480dp"
+        android:drawableLeft="@drawable/back"
+        android:padding="10dp"
+        android:text="Back"
+        android:layout_below="@+id/buttonMateriFour"
+        android:onClick="funcBack"/>
 
 </RelativeLayout>
