@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KimOnDroid</string>
+    <string name="ayo_materi">Ayo Memilih Materi</string>
+    <string name="descMateriOne">Peranan koloid dalam kehidupan sehari-hari</string>
+    <string name="materi_1"> Materi 1</string>
+    <string name="meteri_2"> Meteri 2</string>
+    <string name="jenis_kolodi">Jenis Kolodi</string>
+    <string name="materi_3">Materi 3</string>
+    <string name="sifat_koloid">Sifat-sifat koloid</string>
+    <string name="materi_4">Materi 4</string>
+    <string name="pembuatan_koloid">Pembuatan koloid</string>
+</resources>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/papan"
+    tools:context="com.madwak.kimondroid.MateriActivity">
+
+    <TextView
+        android:id="@+id/titleMateri"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="@string/ayo_materi"
+        android:textSize="30dp"
+        />
+
+    <Button
+        android:id="@+id/buttonMateriOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="80dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/materi"
+        android:background="@color/colorAccent"
+        android:text="@string/materi_1"/>
+
+    <ImageView
+        android:id="@+id/right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/buttonMateriOne"
+        android:src="@drawable/right"/>
+
+    <TextView
+        android:id="@+id/descMateriOne"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/right_icon"
+        android:gravity="center_horizontal"
+        android:text="@string/descMateriOne"/>
+
+    <Button
+        android:id="@+id/buttonMateriTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:padding="10dp"
+        android:layout_below="@id/buttonMateriOne"
+        android:drawableLeft="@drawable/materi"
+        android:background="@color/colorAccent"
+        android:text="@string/meteri_2"
+        />
+
+    <ImageView
+        android:id="@+id/right_iconTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/buttonMateriTwo"
+        android:layout_below="@id/right_icon"
+        android:src="@drawable/right"/>
+
+    <TextView
+        android:id="@+id/descMateriTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/right_iconTwo"
+        android:layout_below="@id/descMateriOne"
+        android:gravity="center_horizontal"
+        android:text="@string/jenis_kolodi"
+        />
+
+    <Button
+        android:id="@+id/buttonMateriThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:padding="10dp"
+        android:layout_below="@id/buttonMateriTwo"
+        android:drawableLeft="@drawable/materi"
+        android:background="@color/colorAccent"
+        android:text="@string/materi_3"/>
+
+    <ImageView
+        android:id="@+id/right_iconThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/buttonMateriThree"
+        android:layout_below="@id/right_iconTwo"
+        android:src="@drawable/right"/>
+
+    <TextView
+        android:id="@+id/descMateriThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="65dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/right_iconTwo"
+        android:layout_below="@id/descMateriTwo"
+        android:gravity="center_horizontal"
+        android:text="@string/sifat_koloid"
+        />
+
+    <Button
+        android:id="@+id/buttonMateriFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="80dp"
+        android:padding="10dp"
+        android:layout_below="@id/buttonMateriThree"
+        android:drawableLeft="@drawable/materi"
+        android:background="@color/colorAccent"
+        android:text="@string/materi_4"
+        />
+
+    <ImageView
+        android:id="@+id/right_iconFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:layout_toRightOf="@id/buttonMateriFour"
+        android:layout_below="@id/right_iconThree"
+        android:src="@drawable/right"/>
+
+    <TextView
+        android:id="@+id/descMateriFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="65dp"
+        android:padding="5dp"
+        android:layout_toRightOf="@id/right_iconFour"
+        android:layout_below="@id/descMateriThree"
+        android:gravity="center_horizontal"
+        android:text="@string/pembuatan_koloid"
+        />
+
+</RelativeLayout>
