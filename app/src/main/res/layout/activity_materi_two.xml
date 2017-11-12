@@ -1,9 +1,187 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/papan"
     tools:context="com.madwak.kimondroid.MateriTwoActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:id="@+id/materi_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/subOne"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/materi_two"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:text="@string/sub_one"/>
+
+        <ImageView
+            android:id="@+id/imgSubOne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subOne"
+            android:src="@drawable/imgsubone"
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subTwo"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubOne"
+            android:text="@string/sub_two"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubTwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subTwo"
+            android:src="@drawable/imgsubonetwo"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subThre"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubTwo"
+            android:text="@string/sub_thre"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubThre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subThre"
+            android:src="@drawable/imgsubonethre"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subFour"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubThre"
+            android:text="@string/sub_four"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubFour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subFour"
+            android:src="@drawable/imgsubonefour"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subFive"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubFour"
+            android:text="@string/sub_five"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubFive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subFive"
+            android:src="@drawable/imgsubonefive"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subSix"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubFive"
+            android:text="@string/sub_six"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubSix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subSix"
+            android:src="@drawable/imgsubonesix"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/subSeven"
+            android:textSize="14dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgSubSix"
+            android:text="@string/sub_seven"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            />
+
+        <ImageView
+            android:id="@+id/imgSubSeven"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/subSeven"
+            android:src="@drawable/imgsuboneseven"
+            android:paddingLeft="20dp"
+            android:paddingBottom="30dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/back"
+            android:text="Back"
+            android:background="@color/colorPrimaryDark"
+            android:onClick="funcBack"/>
+    </RelativeLayout>
+</ScrollView>
