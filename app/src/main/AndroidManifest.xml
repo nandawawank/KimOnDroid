@@ -17,11 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MateriActivity"
-            android:screenOrientation="landscape" />
-        <activity
             android:name=".QuizActivity"
-            android:screenOrientation="landscape"/>
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".MateriActivity"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>
