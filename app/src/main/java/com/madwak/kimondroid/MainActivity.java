@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
     public void funcQuiz(View view) {
         Intent quiz = new Intent(MainActivity.this,QuizActivity.class);
         startActivity(quiz);
-        finish();
+        // finish();
     }
 
     public void funMateri(View view) {

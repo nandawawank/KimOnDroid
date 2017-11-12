@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_quiz"
-    android:paddingRight="25dp"
     android:paddingLeft="25dp"
+    android:paddingRight="25dp"
     tools:context="com.madwak.kimondroid.QuizActivity">
 
     <TextView
@@ -40,19 +40,22 @@
             android:id="@+id/btnAnswer1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koloid"/>
+            android:text="Koloid"
+            android:onClick="myAnswer"/>
 
         <Button
             android:id="@+id/btnAnswer2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Aerosol"/>
+            android:text="Aerosol"
+            android:onClick="myAnswer"/>
 
         <Button
             android:id="@+id/btnAnswer3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Buih"/>
+            android:text="Buih"
+            android:onClick="myAnswer"/>
     </LinearLayout>
 
     <LinearLayout
@@ -67,19 +70,22 @@
             android:id="@+id/btnAnswer4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Adsorbsi"/>
+            android:text="Adsorbsi"
+            android:onClick="myAnswer"/>
 
         <Button
             android:id="@+id/btnAnswer5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Koagulasi"/>
+            android:text="Koagulasi"
+            android:onClick="myAnswer"/>
 
         <Button
             android:id="@+id/btnAnswer6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Cara Kondensasi"/>
+            android:text="Cara Kondensasi"
+            android:onClick="myAnswer"/>
     </LinearLayout>
 
     <LinearLayout
@@ -94,19 +100,15 @@
             android:id="@+id/btnAnswer7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Kondensasi dan Dispersi"/>
+            android:text="Kondensasi dan Dispersi"
+            android:onClick="myAnswer"/>
 
         <Button
             android:id="@+id/btnAnswer8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Mekanik dan Kimia"/>
-
-        <Button
-            android:id="@+id/btnAnswer9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Efek Tyndall"/>
+            android:text="Mekanik dan Kimia"
+            android:onClick="myAnswer"/>
     </LinearLayout>
 
     <LinearLayout
@@ -118,10 +120,18 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btnAnswer9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Efek Tyndall"
+            android:onClick="myAnswer"/>
+
+        <Button
             android:id="@+id/btnAnswer10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Tinta"/>
+            android:text="Tinta"
+            android:onClick="myAnswer"/>
     </LinearLayout>
 
 </RelativeLayout>
