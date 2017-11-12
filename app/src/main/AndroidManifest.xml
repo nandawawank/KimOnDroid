@@ -18,9 +18,18 @@
         </activity>
         <activity
             android:name=".QuizActivity"
-            android:screenOrientation="landscape"></activity>
-        <activity android:name=".MateriActivity"
-            android:screenOrientation="landscape"></activity>
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MateriActivity"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".MateriOneActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MateriTwoActivity" />
+        <activity android:name=".MateriThreActivity" />
+        <activity android:name=".MateriFourActivity" />
+        <activity android:name=".PetunjukActivity" />
+        <activity android:name=".InfoActivity" />
     </application>
 
 </manifest>

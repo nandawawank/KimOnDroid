@@ -6,59 +6,107 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     tools:context="com.madwak.kimondroid.MainActivity">
-        <TextView
-            android:id="@+id/txtTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
-            android:text="KimOnDroid"
-            android:textSize="50dp"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:background="@color/white" />
 
-        <TextView
-            android:id="@+id/txtMiniTitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="Aplikasi Media Pembelajaran Kimia"
-            android:layout_marginTop="85dp"
-            android:textColor="@color/black"
-            android:textSize="15dp"
-            android:textStyle="italic"
-            android:background="@color/white"/>
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@color/white"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="50sp"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/btnMateri"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="180dp"
-            android:layout_marginBottom="5dp"
-            android:layout_centerHorizontal="true"
-            android:background="@color/colorAccent"
-            android:hint="Materi"
-            android:onClick="funMateri"/>
+    <TextView
+        android:id="@+id/txtMiniTitle"
+        android:layout_below="@id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingLeft="10.5dp"
+        android:paddingRight="10.5dp"
+        android:background="@color/white"
+        android:text="@string/app_subname"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        android:textStyle="italic" />
 
-        <Button
-            android:id="@+id/btnQuiz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnMateri"
-            android:layout_marginLeft="200dp"
-            android:layout_marginRight="5dp"
-            android:background="@color/colorPrimary"
-            android:hint="Quiz"
-            android:onClick="funcQuiz"/>
+    <Button
+        android:id="@+id/btnMateri"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:background="@color/colorAccent"
+        android:drawableStart="@drawable/materi"
+        android:drawableLeft="@drawable/materi"
+        android:text=" Materi"
+        android:onClick="funMateri" />
 
-        <Button
-            android:id="@+id/btnPetunjuk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/btnMateri"
-            android:layout_centerHorizontal="true"
-            android:layout_toRightOf="@id/btnQuiz"
-            android:background="@color/colorPrimaryDark"
-            android:hint="Petunjuk"/>
+    <Button
+        android:id="@+id/btnQuiz"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnMateri"
+        android:layout_marginLeft="80dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:drawableStart="@drawable/materi"
+        android:drawableLeft="@drawable/materi"
+        android:text=" Quiz"
+        android:onClick="funcQuiz" />
+
+    <Button
+        android:id="@+id/btnPetunjuk"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnQuiz"
+        android:layout_marginLeft="140dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:drawableStart="@drawable/materi"
+        android:drawableLeft="@drawable/materi"
+        android:text=" Petunjuk"
+        android:onClick="funcPetunjuk" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_settings_power_black_36dp"
+        android:backgroundTint="@color/colorAccent"
+        android:onClick="funcExit"/>
+
+    <Button
+        android:id="@+id/btnInfo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/btnExit"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_info_outline_black_36dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:onClick="funcInfo"/>
+
+    <Button
+        android:id="@+id/btnMusic"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
+        android:layout_toLeftOf="@id/btnInfo"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/ic_volume_up_black_36dp"
+        android:onClick="funcMusic"/>
+
 </RelativeLayout>

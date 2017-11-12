@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">KimOnDroid</string>
+    <string name="app_name">KimOnDro</string>
     <string name="ayo_materi">Ayo Memilih Materi</string>
     <string name="descMateriOne">Peranan koloid dalam kehidupan sehari-hari</string>
     <string name="materi_1"> Materi 1</string>
@@ -9,11 +9,12 @@
     <string name="sifat_koloid">Sifat-sifat koloid</string>
     <string name="materi_4">Materi 4</string>
     <string name="pembuatan_koloid">Pembuatan koloid</string>
+    <string name="app_subname">Media Pembelajaran Sistem Koloid</string>
 
     <string-array name="materi_satu">
         <item>
             Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid
-            adalah sebagai berikut:
+            adalah sebagai berikut:\n
             1. Industri kosmetika
             Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.
         </item>

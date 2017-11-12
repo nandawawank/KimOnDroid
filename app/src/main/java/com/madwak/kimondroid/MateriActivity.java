@@ -44,8 +44,8 @@ public class MateriActivity extends AppCompatActivity {
     }
 
     public void funcBack(View view) {
-        Intent back = new Intent(MateriActivity.this, MainActivity.class);
-        startActivity(back);
+//        Intent back = new Intent(MateriActivity.this, MainActivity.class);
+//        startActivity(back);
         finish();
     }
 }
