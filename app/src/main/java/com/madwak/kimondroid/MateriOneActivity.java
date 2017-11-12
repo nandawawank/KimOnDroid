@@ -17,14 +17,13 @@ public class MateriOneActivity extends AppCompatActivity {
         setContentView(R.layout.activity_materi_one);
 
         String[] materi_one= getResources().getStringArray(R.array.materi_satu);
-        //Integer[] img_one= getResources().getIntArray(R.array.gambar_satu);
+       
 
         ListView listview =(ListView) findViewById(R.id.materi_one);
-        ImageView imageview =(ImageView) findViewById(R.id.img_one);
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, materi_one);
-        //ArrayAdapter adapterdua = new ArrayAdapter(this,android.R.layout.simple_list_item_1, img_one);
+
+        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, materi_one)
         listview.setAdapter(adapter);
-        //imageview.setImageResource(img_one);
+
     }
 
 
