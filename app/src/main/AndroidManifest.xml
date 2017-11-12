@@ -21,6 +21,12 @@
             android:screenOrientation="landscape"></activity>
         <activity android:name=".MateriActivity"
             android:screenOrientation="landscape"></activity>
+        <activity android:name=".MateriOneActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".MateriTwoActivity"
+            android:screenOrientation="landscape"></activity>
+        <activity android:name=".MateriThreActivity"
+            android:screenOrientation="landscape"></activity>
     </application>
 
 </manifest>

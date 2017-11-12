@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/papan"
     tools:context="com.madwak.kimondroid.MateriThreActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <ListView
+        android:id="@+id/materi_thre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"/>
+
+</RelativeLayout>
