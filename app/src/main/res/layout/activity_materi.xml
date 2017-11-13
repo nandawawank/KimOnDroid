@@ -43,7 +43,7 @@
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
-        android:layout_marginLeft="60dp"
+        android:layout_marginLeft="30dp"
         android:padding="5dp"
         android:layout_toRightOf="@id/right_icon"
         android:gravity="center_horizontal"
@@ -82,7 +82,7 @@
         android:layout_toRightOf="@id/right_iconTwo"
         android:layout_below="@id/descMateriOne"
         android:gravity="center_horizontal"
-        android:text="@string/jenis_kolodi"
+        android:text="@string/descMateriTwo"
         />
 
     <Button
@@ -118,7 +118,7 @@
         android:layout_toRightOf="@id/right_iconTwo"
         android:layout_below="@id/descMateriTwo"
         android:gravity="center_horizontal"
-        android:text="@string/sifat_koloid"
+        android:text="@string/descMateriThre"
         />
 
     <Button
@@ -154,7 +154,7 @@
         android:layout_toRightOf="@id/right_iconFour"
         android:layout_below="@id/descMateriThree"
         android:gravity="center_horizontal"
-        android:text="@string/pembuatan_koloid"
+        android:text="@string/descMateriFour"
         />
 
     <Button

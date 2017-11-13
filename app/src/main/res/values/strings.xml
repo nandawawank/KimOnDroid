@@ -1,17 +1,17 @@
 <resources>
     <string name="app_name">KimOnDro</string>
     <string name="ayo_materi">Ayo Memilih Materi</string>
-    <string name="descMateriOne">Peranan koloid dalam kehidupan sehari-hari</string>
+    <string name="descMateriOne">Jenis Koloid</string>
     <string name="materi_1"> Materi 1</string>
     <string name="meteri_2"> Meteri 2</string>
-    <string name="jenis_kolodi">Jenis Kolodi</string>
+    <string name="descMateriTwo">Sifat-sifat Koloid</string>
     <string name="materi_3">Materi 3</string>
-    <string name="sifat_koloid">Sifat-sifat koloid</string>
+    <string name="descMateriThre">Pembuatan Koloid</string>
     <string name="materi_4">Materi 4</string>
-    <string name="pembuatan_koloid">Pembuatan koloid</string>
+    <string name="descMateriFour">Peranan Koloid</string>
     <string name="app_subname">Media Pembelajaran Sistem Koloid</string>
 
-    <string-array name="materi_satu">
+    <string-array name="materi_empat">
         <item>
             Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid
             adalah sebagai berikut:\n
@@ -42,7 +42,7 @@
         <item>@drawable/imgmateriempat</item>
     </array>
 
-    <string-array name="materi_dua">
+    <string-array name="materi_satu">
         <item>
             Dalam kehidupan sehari-hari kita sering menemukan zat yang memiliki sifat berbentuk campuran homogen namun tidak bening,
             atau keruh, seperti berbagai jenis minuman, susu atau pylox. Berdasarkan jenis fasa pendispersi, yaitu zat yang memiliki
@@ -90,7 +90,7 @@
         Fase terdispersinya pasir kuarsa (padat) + CaCO3 (padat) Kaca
     </string>
 
-    <string-array name="materi_tiga">
+    <string-array name="materi_dua">
         <item>
             Koloid mempunyai sifat-sifat yang khas, misalnya menunjukkan efek Tyndall, gerak Brown, dan mempunyai muatan listrik.
             1. Efek Tyndall
@@ -144,6 +144,11 @@
             dalam air dan putih telur dalam air. Sol liofob adalah sol yang fase terdispersinya tidak menarik medium pendispersi. Contoh
             As2S3 dalam air, garam sulfida dalam air, dan belerang dalam air.Perbedaan sol  liofil dengan sol liofob dapat dilihat pada
             tabel berikut.
+        </item>
+    </string-array>
+    <string-array name="materi_tiga">
+        <item>
+
         </item>
     </string-array>
 </resources>

@@ -17,8 +17,9 @@
         android:paddingRight="10dp"
         android:background="@color/white"
         android:text="@string/app_name"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="49sp"
         android:textStyle="bold" />
 
     <TextView
