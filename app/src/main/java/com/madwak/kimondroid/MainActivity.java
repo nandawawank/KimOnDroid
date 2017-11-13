@@ -2,14 +2,23 @@ package com.madwak.kimondroid;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
+import android.media.MediaPlayer;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
+
+    Button btnMusic;
+    MediaPlayer bgMusic;
+    boolean isMusicOn = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +26,9 @@ public class MainActivity extends AppCompatActivity {
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        btnMusic = (Button) findViewById(R.id.btnMusic);
+        funcMusic(null);
     }
 
     public void funcPetunjuk(View view) {
@@ -42,7 +54,19 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void funcMusic(View view) {
-
+        if (isMusicOn) {
+            bgMusic.stop();
+            bgMusic.release();
+            isMusicOn = false;
+            btnMusic.setBackgroundResource(R.drawable.ic_volume_off);
+        }
+        else {
+            bgMusic = MediaPlayer.create(MainActivity.this, R.raw.bensound_buddy);
+            bgMusic.start();
+            bgMusic.setLooping(true);
+            isMusicOn = true;
+            btnMusic.setBackgroundResource(R.drawable.ic_volume_up);
+        }
     }
 
     public void funcExit(View view) {

@@ -21,9 +21,9 @@ public class MateriOneActivity extends AppCompatActivity {
         String[] materi_one= getResources().getStringArray(R.array.materi_satu);
 
         ListView listview =(ListView) findViewById(R.id.materi_one);
-
         ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, materi_one);
         listview.setAdapter(adapter);
+
     }
 
 

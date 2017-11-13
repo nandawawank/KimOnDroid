@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/papan"
-    android:padding="30dp"
     android:orientation="vertical"
+    android:padding="25dp"
     tools:context="com.madwak.kimondroid.InfoActivity">
 
     <TextView
@@ -14,38 +14,51 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
-        android:textSize="50sp"
         android:textColor="@color/colorAccent"
+        android:textSize="50sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/textView2"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_below="@id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Merupakan media pembelajaran Kimia berbasis mobile yang pada seri ini berisikan materi sistem koloid.\nMedia pembelajaran ini dilengkapi dengan penjelasan materi, petunjuk pada aplikasi dan quiz yang dapat digunakan untuk membantu dalam pembelajran secara mandiri.\n"
-        android:textSize="16sp" />
+        android:layout_marginBottom="10dp">
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_below="@id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@color/colorAccent"
-        android:text="Dikembangkan oleh:\nAhmad Tantowi\nNanda Wawan K"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Merupakan media pembelajaran Kimia berbasis mobile yang pada seri ini berisikan materi sistem koloid.\nMedia pembelajaran ini dilengkapi dengan penjelasan materi, petunjuk pada aplikasi dan quiz yang dapat digunakan untuk membantu dalam pembelajran secara mandiri.\n"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:text="Materi:\nDenda\nPengembang:\nAhmad Tantowi\nNanda Wawan K\nMusik:\nhttps://bensound.com\n"
+                android:textColor="@color/colorAccent"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </ScrollView>
 
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/colorPrimaryDark"
-        android:drawableStart="@drawable/back"
-        android:drawableLeft="@drawable/back"
-        android:padding="10dp"
-        android:text="Back"
-        android:onClick="funcBack"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentRight="true" />
+        android:layout_alignParentRight="true"
+        android:background="@color/colorPrimaryDark"
+        android:drawableLeft="@drawable/back"
+        android:drawableStart="@drawable/back"
+        android:onClick="funcBack"
+        android:padding="10dp"
+        android:text="Back" />
 
 </RelativeLayout>

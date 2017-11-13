@@ -25,11 +25,16 @@
         <activity
             android:name=".MateriOneActivity"
             android:screenOrientation="landscape" />
-        <activity android:name=".MateriTwoActivity" />
-        <activity android:name=".MateriThreActivity" />
-        <activity android:name=".MateriFourActivity" />
-        <activity android:name=".PetunjukActivity" />
-        <activity android:name=".InfoActivity" />
+        <activity android:name=".MateriTwoActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MateriThreActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".MateriFourActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".PetunjukActivity"
+            android:screenOrientation="landscape" />
+        <activity android:name=".InfoActivity"
+            android:screenOrientation="landscape" />
     </application>
 
 </manifest>
