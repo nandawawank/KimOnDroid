@@ -11,37 +11,6 @@
     <string name="descMateriFour">Peranan Koloid</string>
     <string name="app_subname">Media Pembelajaran Sistem Koloid</string>
 
-    <string-array name="materi_empat">
-        <item>
-            Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid
-            adalah sebagai berikut:\n
-            1. Industri kosmetika
-            Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.
-        </item>
-        <item>
-            2. Industri tekstil
-            Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan
-            zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.
-        </item>
-        <item>
-            3. Industri sabun dan deterjen
-            Sabun dan deterjen merupakan emulgator untuk membentuk emulsi antara kotoran (minyak) dengan air.
-        </item>
-        <item>
-            4. Kelestarian lingkungan
-            Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell.
-            Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari
-            cerobong asap pabrik.
-        </item>
-    </string-array>
-
-    <array name="gambar_satu">
-        <item>@drawable/imgmaterisatu</item>
-        <item>@drawable/imgmateridua</item>
-        <item>@drawable/imgmateritiga</item>
-        <item>@drawable/imgmateriempat</item>
-    </array>
-
     <string-array name="materi_satu">
         <item>
             Dalam kehidupan sehari-hari kita sering menemukan zat yang memiliki sifat berbentuk campuran homogen namun tidak bening,
@@ -148,7 +117,54 @@
     </string-array>
     <string-array name="materi_tiga">
         <item>
+            Pada prinsipnya pembuatan koloid adalah mengubah partikel-partikel berukuran ion, atom, atau molekul menjadi partikel-partikel
+            koloid atau mengubah partikel besar menjadi koloid. Untuk memperoleh suatu sistem koloid dapat dilakukan dengan metode kondensasi
+            dan dispersi.
+        </item>
+        <item>
+            1. Metode kondensasi
+               Metode kondensasi merupakan metode untuk membuat partikel koloid dari penggabungan partikel-partikel larutan. Hal ini dapat dilakukan dengan reaksi kimia (dekomposisi rangkap, hidrolisis, dan redoks) penggantian pelarut
+               a. Dekomposisi Rangkap
+                  Contoh:
+                  1. Sol As2S3 dibuat dengan reaksi antara larutan H3AsO3 dengan larutan H2S.
+                     2H3AsO3(aq) + 3H2S(aq) As2S3(koloid) + 6H2O(l)
+                  2. Sol AgCl dibuat dengan mereaksikan larutan perak nitrat encer dengan larutan HCl encer.
+                     AgNO3(aq) + HCl  AgCl(koloid) + HNO3(aq)
+               b. Redoks
+                  Reaksi redoks adalah reaksi yang disertai kenaikan dan penurunan bilangan oksidasi (oksidasi dan reduksi).
+                    Contoh:
+                    1. Sol belerang dibuat dengan mengalirkan gas H2S ke dalam larutan SO2.
+                       H2S(g) + SO2(aq)  2H2O(l) + 3S(koloid)
+                    2. Sol emas dibuat dari reaksi antara larutan HAuCl4 dengan larutan K2CO3 dan HCHO (formaldehida).
+                       2HAuCl4(aq) + 6K2CO3(aq) + 3HCHO(aq)  2Au(koloid) + 5CO2 + 8KCl(aq) + 3HCOOK(aq)+ KHCO3 (aq) + 2H2O(l)
 
+               c. Hidrolisis
+                  Hidrolisis merupakan reaksi suatu zat dengan air.
+                  Contoh:
+                  Sol Fe(OH)3 dibuat dari hidrolisis FeCl3 dalam air mendidih.
+                  FeCl3(aq) + 3H2O(l)  Fe(OH)3(koloid) + 3HCl (aq)
+                  Penggantian Pelarut
+                  Penggantian pelarut juga dapat menghasilkan suatu koloid. Contohnya yaitu apabila larutan jenuh kalsium asetat dicampur
+                  dengan alkohol akan terbentuk suatu koloid berupa gel.
+        </item>
+        <item>
+            2.  Metode Dispersi
+                Metode dispersi merupakan metode pembuatan koloid yaitu partikel kasar dipecah menjadi partikel koloid.
+                Metode ini dapat dilakukan dengan mekanik, peptisasi atau loncatan bunga listrik (busur bredig).
+                a. Cara Mekanik
+                   Cara mekanik dilakukan dengan menggerus partikel kasar dengan penggiling koloid sampai diperoleh kehalusan pada tingkat
+                   tertentu selanjutnya didispersikan ke dalam medium pendispersi.
+                   Contoh:
+                   Sol belerang dibuat dengan menggerus serbuk belerang sampai halus kemudian dicampur dengan air.
+                b. Peptisasi
+                   Cara peptisasi yaitu pembuatan koloid dari partikel kasar dari suatu endapan dengan zat pemeptisasi (pemecah).
+                   Contoh:
+                   Agar-agar dipeptisasi oleh air, nitroselulosa oleh aseton, dan karet oleh bensin. Endapan NIS dipeptisasi oleh H2S, endapan Al(OH)3 oleh ALCl3, dan endapan AgCl oleh HCl.
+                c. Busur Bredig
+                   Cara busur bredig digunakan untuk membuat sol logam, seperti Ag, Au, dan Pt dengan bantuan loncatan listrik. Logam yang
+                   akan dijadikan koloid digunakan sebagai elektrode, selanjutnya kedua elektrode dimasukkan dalam medium pendispersi
+                   dan diberi loncatan listrik tegangan tinggi. Akibatnya, atom-atom akan terlempar ke dalam air (medium pendispersi) dan
+                   mengalami kondensasi membentuk partikel koloid.
         </item>
     </string-array>
 </resources>

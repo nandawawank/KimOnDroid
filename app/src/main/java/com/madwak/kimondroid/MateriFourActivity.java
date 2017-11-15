@@ -1,13 +1,39 @@
 package com.madwak.kimondroid;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+import java.util.ArrayList;
+
 public class MateriFourActivity extends AppCompatActivity {
+
+    ListView lv;
+    Context context;
+
+    ArrayList prgmName;
+    public static Integer[] image_four={
+            R.drawable.imgmaterisatu,R.drawable.imgmateridua,R.drawable.imgmateritiga,R.drawable.imgmateriempat};
+    public static String[] materi_four={
+            "Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid\n" +
+            "adalah sebagai berikut:\\n\n" +
+            "1. Industri kosmetika\n" +
+            "   Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.",
+            "2. Industri tekstil\n" +
+            "   Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan\n" +
+            "   zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.",
+            "3. Industri sabun dan deterjen\n" +
+            "   Sabun dan deterjen merupakan emulgator untuk membentuk emulsi antara kotoran (minyak) dengan air.",
+            "4. Kelestarian lingkungan\n" +
+            "   Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell.\n" +
+            "   Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari\n" +
+            "   cerobong asap pabrik."
+    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +42,18 @@ public class MateriFourActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_materi_four);
 
-        String[] materi_four= getResources().getStringArray(R.array.materi_empat);
+        context=this;
 
-        ListView listview =(ListView) findViewById(R.id.materi_four);
+        lv=(ListView) findViewById(R.id.materi_four);
+        lv.setAdapter(new CostomAdapterFour(this, materi_four, image_four));
 
-        ArrayAdapter adapter = new ArrayAdapter(this,android.R.layout.simple_list_item_1, materi_four);
-        listview.setAdapter(adapter);
     }
+/*
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+*/
 }
