@@ -1,9 +1,11 @@
 package com.madwak.kimondroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ArrayAdapter;
@@ -47,6 +49,11 @@ public class MateriFourActivity extends AppCompatActivity {
         lv=(ListView) findViewById(R.id.materi_four);
         lv.setAdapter(new CostomAdapterFour(this, materi_four, image_four));
 
+    }
+
+    public void funcBack(View view) {
+        Intent intent = new Intent(MateriFourActivity.this, MateriActivity.class);
+        startActivity(intent);
     }
 /*
     @Override
