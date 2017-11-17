@@ -4,4 +4,7 @@
     <dimen name="layout_margin_vertical">25dp</dimen>
     <dimen name="layout_margin_bottom">35dp</dimen>
     <dimen name="textsize_materi">16sp</dimen>
+    <dimen name="left_margin_petunjuk">15dp</dimen>
+    <dimen name="bottom_margin_petunjuk">5dp</dimen>
+    <dimen name="width_button_petunjuk">200dp</dimen>
 </resources>

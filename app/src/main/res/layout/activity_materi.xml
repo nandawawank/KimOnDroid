@@ -69,7 +69,7 @@
                 android:drawableLeft="@drawable/materi"
                 android:onClick="funcMateriTwo"
                 android:padding="10dp"
-                android:text="@string/meteri_2" />
+                android:text="@string/materi_2" />
 
             <ImageView
                 android:id="@+id/right_iconTwo"

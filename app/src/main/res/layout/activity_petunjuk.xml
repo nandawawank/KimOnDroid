@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_petunjuk"
+    android:background="@drawable/bg_quiz"
     android:gravity="top"
     tools:context="com.madwak.kimondroid.PetunjukActivity">
 
@@ -13,25 +13,263 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/layout_margin_vertical"
-        android:layout_marginLeft="100dp"
+        android:layout_centerHorizontal="true"
         android:text="Petunjuk"
-        android:textColor="@color/colorAccent"
-        android:textSize="50sp"
-        android:textStyle="bold" />
+        android:textSize="30dp" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"></ScrollView>
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView"
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnMateri"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Materi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMateri"
+                android:layout_alignBaseline="@id/btnMateri"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi halaman materi "/>
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMateri"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_videogame"
+                android:drawableLeft="@drawable/ic_videogame"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Quiz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnQuiz"
+                android:layout_alignBaseline="@id/btnQuiz"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi quiz edukasi dan evaluasi pembelajaran"/>
+
+            <Button
+                android:id="@+id/btnPetunjuk"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnQuiz"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/ic_help"
+                android:drawableLeft="@drawable/ic_help"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Petunjuk" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnPetunjuk"
+                android:layout_alignBaseline="@id/btnPetunjuk"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi petunjuk aplikasi KimOnDro"/>
+
+            <Button
+                android:id="@+id/btnMateri1"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPetunjuk"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="@string/materi_1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMateri1"
+                android:layout_alignBaseline="@id/btnMateri1"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi materi jenis koloid"/>
+
+            <Button
+                android:id="@+id/btnMateri2"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMateri1"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="@string/materi_2" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMateri2"
+                android:layout_alignBaseline="@id/btnMateri2"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi materi sifat-sifat koloid"/>
+
+            <Button
+                android:id="@+id/btnMateri3"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMateri2"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="@string/materi_3" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMateri3"
+                android:layout_alignBaseline="@id/btnMateri3"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi materi pembuatan koloid"/>
+
+            <Button
+                android:id="@+id/btnMateri4"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMateri3"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="@string/materi_4" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMateri4"
+                android:layout_alignBaseline="@id/btnMateri4"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi materi peranan koloid"/>
+
+            <Button
+                android:id="@+id/btnMusic"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMateri4"
+                android:paddingLeft="90dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_volume_up"
+                android:drawableLeft="@drawable/ic_volume_up"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnMusic"
+                android:layout_alignBaseline="@id/btnMusic"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Pengaturan musik latar"/>
+
+            <Button
+                android:id="@+id/btnInfo"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnMusic"
+                android:paddingLeft="90dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_info_outline"
+                android:drawableLeft="@drawable/ic_info_outline"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnInfo"
+                android:layout_alignBaseline="@id/btnInfo"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi informasi pengembang dan deskripsi aplikasi"/>
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnInfo"
+                android:paddingLeft="90dp"
+                android:background="@color/black"
+                android:drawableStart="@drawable/back"
+                android:drawableLeft="@drawable/back"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnBack"
+                android:layout_alignBaseline="@id/btnBack"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Kembali ke halaman sebelumnya"/>
+
+            <Button
+                android:id="@+id/btnExit"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnBack"
+                android:paddingLeft="90dp"
+                android:background="@color/white"
+                android:drawableStart="@drawable/ic_power_settings"
+                android:drawableLeft="@drawable/ic_power_settings"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnExit"
+                android:layout_alignBaseline="@id/btnExit"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Keluar dari aplikasi"/>
+
+        </RelativeLayout>
+    </ScrollView>
 
     <Button
         android:id="@+id/buttonBack"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
         android:background="@drawable/back"
-        android:backgroundTint="@color/colorAccent"
         android:onClick="funcBack" />
 
 </RelativeLayout>
