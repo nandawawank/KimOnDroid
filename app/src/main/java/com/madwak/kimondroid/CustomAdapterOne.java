@@ -7,25 +7,25 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
- * Created by nandawk on 11/15/17.
+ * Created by Ahmad on 17-Nov-17.
  */
 
-public class CostomAdapterTwo extends BaseAdapter{
+public class CustomAdapterOne extends BaseAdapter {
     String[] result;
     Context context;
     Integer[] imageId;
-    private static LayoutInflater inflater=null;
-    public CostomAdapterTwo(MateriTwoActivity materitwoactivity, String[] materi_two, Integer[] image_two) {
+    private static LayoutInflater inflater = null;
+
+    public CustomAdapterOne(MateriOneActivity materioneactivity, String[] materi_one, Integer[] image_one) {
         // TODO Auto-generated constructor stub
-        result=materi_two;
-        context=materitwoactivity;
-        imageId=image_two;
-        inflater = ( LayoutInflater )context.
-                getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        result = materi_one;
+        context = materioneactivity;
+        imageId = image_one;
+        inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
+
     @Override
     public int getCount() {
         // TODO Auto-generated method stub
@@ -44,29 +44,23 @@ public class CostomAdapterTwo extends BaseAdapter{
         return position;
     }
 
-    public class Holder
-    {
+    public class Holder {
         TextView tv;
         ImageView img;
     }
+
     @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         // TODO Auto-generated method stub
-        CostomAdapterTwo.Holder holder=new CostomAdapterTwo.Holder();
         View rowView;
-        rowView = inflater.inflate(R.layout.list_materidua, null);
-        holder.tv=(TextView) rowView.findViewById(R.id.materidua);
-        holder.img=(ImageView) rowView.findViewById(R.id.gambardua);
+        CustomAdapterOne.Holder holder = new CustomAdapterOne.Holder();
+
+        rowView = inflater.inflate(R.layout.list_materisatu, null);
+        holder.tv = (TextView) rowView.findViewById(R.id.materisatu);
+        holder.img = (ImageView) rowView.findViewById(R.id.gambarsatu);
         holder.tv.setText(result[position]);
         holder.img.setImageResource(imageId[position]);
-//        rowView.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
-//            }
-//        });
+
         return rowView;
     }
-
 }

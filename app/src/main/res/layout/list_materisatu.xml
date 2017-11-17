@@ -5,22 +5,20 @@
     android:orientation="horizontal">
 
     <TextView
-        android:id="@+id/materiempat"
+        android:id="@+id/materisatu"
         android:padding="15dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/textsize_materi"
-        android:text="TextView" />
+        android:textSize="@dimen/textsize_materi" />
 
     <ImageView
-        android:id="@+id/gambarempat"
+        android:id="@+id/gambarsatu"
         android:padding="15dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/materiempat"
-        android:layout_centerHorizontal="true"
-        />
+        android:layout_below="@id/materisatu"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>

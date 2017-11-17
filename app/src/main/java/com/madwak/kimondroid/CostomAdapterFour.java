@@ -60,13 +60,13 @@ public class CostomAdapterFour extends BaseAdapter{
         holder.img=(ImageView) rowView.findViewById(R.id.gambarempat);
         holder.tv.setText(result[position]);
         holder.img.setImageResource(imageId[position]);
-        rowView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
-            }
-        });
+//        rowView.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                Toast.makeText(context, "You Clicked "+result[position], Toast.LENGTH_LONG).show();
+//            }
+//        });
         return rowView;
     }
 

@@ -20,27 +20,27 @@ public class MateriActivity extends AppCompatActivity {
     public void funcMateriOne(View view) {
         Intent materiOne = new Intent(MateriActivity.this, MateriOneActivity.class);
         startActivity(materiOne);
-        finish();
+        //finish();
     }
 
 
     public void funcMateriTwo(View view) {
         Intent materiTwo = new Intent(MateriActivity.this, MateriTwoActivity.class);
         startActivity(materiTwo);
-        finish();
+        //finish();
     }
 
 
     public void funcMateriThre(View view) {
         Intent materiThre = new Intent(MateriActivity.this, MateriThreActivity.class);
         startActivity(materiThre);
-        finish();
+        //finish();
     }
 
     public void funcMateriFour(View view) {
         Intent materiFour = new Intent(MateriActivity.this, MateriFourActivity.class);
         startActivity(materiFour);
-        finish();
+        //finish();
     }
 
     public void funcBack(View view) {

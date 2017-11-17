@@ -22,19 +22,19 @@ public class MateriFourActivity extends AppCompatActivity {
     public static Integer[] image_four={
             R.drawable.imgmaterisatu,R.drawable.imgmateridua,R.drawable.imgmateritiga,R.drawable.imgmateriempat};
     public static String[] materi_four={
-            "Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid\n" +
-            "adalah sebagai berikut:\\n\n" +
+            "Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid " +
+            "adalah sebagai berikut:\n\n" +
             "1. Industri kosmetika\n" +
-            "   Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.",
+            "Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.",
             "2. Industri tekstil\n" +
-            "   Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan\n" +
-            "   zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.",
+            "Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan " +
+            "zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.",
             "3. Industri sabun dan deterjen\n" +
-            "   Sabun dan deterjen merupakan emulgator untuk membentuk emulsi antara kotoran (minyak) dengan air.",
+            "Sabun dan deterjen merupakan emuglator untuk membentuk emulsi antara kotoran (minyak) dengan air.",
             "4. Kelestarian lingkungan\n" +
-            "   Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell.\n" +
-            "   Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari\n" +
-            "   cerobong asap pabrik."
+            "Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell. " +
+            "Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari " +
+            "cerobong asap pabrik."
     };
 
     @Override
@@ -52,15 +52,8 @@ public class MateriFourActivity extends AppCompatActivity {
     }
 
     public void funcBack(View view) {
-        Intent intent = new Intent(MateriFourActivity.this, MateriActivity.class);
-        startActivity(intent);
+//        Intent intent = new Intent(MateriFourActivity.this, MateriActivity.class);
+//        startActivity(intent);
+        finish();
     }
-/*
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.main, menu);
-        return true;
-    }
-*/
 }

@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/papan"
-    android:padding="25dp"
     tools:context="com.madwak.kimondroid.MateriActivity">
 
     <TextView
         android:id="@+id/titleMateri"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_vertical"
         android:layout_centerHorizontal="true"
         android:text="@string/ayo_materi"
         android:textSize="30dp" />
@@ -19,13 +19,16 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_horizontal"
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
         android:layout_marginTop="5dp"
-        android:layout_marginBottom="10dp"
         android:layout_below="@id/titleMateri">
 
         <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
 
             <Button
                 android:id="@+id/buttonMateriOne"
@@ -42,15 +45,14 @@
                 android:id="@+id/right_icon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="100dp"
                 android:layout_toRightOf="@id/buttonMateriOne"
                 android:src="@drawable/right" />
 
             <TextView
                 android:id="@+id/descMateriOne"
-                android:layout_width="150dp"
+                android:layout_width="250dp"
                 android:layout_height="50dp"
-                android:layout_alignParentRight="true"
                 android:layout_toRightOf="@id/right_icon"
                 android:gravity="center_horizontal"
                 android:padding="5dp"
@@ -74,17 +76,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_icon"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="100dp"
                 android:layout_marginTop="35dp"
                 android:layout_toRightOf="@id/buttonMateriTwo"
                 android:src="@drawable/right" />
 
             <TextView
                 android:id="@+id/descMateriTwo"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/descMateriOne"
-                android:layout_alignParentRight="true"
                 android:layout_marginTop="10dp"
                 android:layout_toRightOf="@id/right_iconTwo"
                 android:gravity="center_horizontal"
@@ -109,17 +110,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_iconTwo"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="100dp"
                 android:layout_marginTop="35dp"
                 android:layout_toRightOf="@id/buttonMateriThree"
                 android:src="@drawable/right" />
 
             <TextView
                 android:id="@+id/descMateriThree"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/descMateriTwo"
-                android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/right_iconTwo"
                 android:gravity="center_horizontal"
@@ -144,17 +144,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/right_iconThree"
-                android:layout_marginLeft="140dp"
+                android:layout_marginLeft="100dp"
                 android:layout_marginTop="35dp"
                 android:layout_toRightOf="@id/buttonMateriFour"
                 android:src="@drawable/right" />
 
             <TextView
                 android:id="@+id/descMateriFour"
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/descMateriThree"
-                android:layout_alignParentRight="true"
                 android:layout_marginTop="30dp"
                 android:layout_toRightOf="@id/right_iconFour"
                 android:gravity="center_horizontal"
@@ -165,13 +164,12 @@
 
     <Button
         android:id="@+id/buttonBack"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:background="@drawable/back"
-        android:onClick="funcBack"
-        android:padding="10dp"
-        />
+        android:onClick="funcBack" />
 
 </RelativeLayout>

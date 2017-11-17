@@ -5,16 +5,16 @@
     android:orientation="horizontal">
     <TextView
         android:id="@+id/materidua"
-        android:padding="25dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="25dp"
+        android:textSize="@dimen/textsize_materi"
         />
 
     <ImageView
         android:id="@+id/gambardua"
-        android:padding="25dp"
+        android:padding="15dp"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,179 +7,195 @@
     android:background="@drawable/papan"
     tools:context="com.madwak.kimondroid.MateriOneActivity">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <ListView
-            android:id="@+id/materi_one"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingLeft="20dp"
-            android:paddingTop="20dp"
-            />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:text="@string/descMateriOne"
+        android:textSize="30sp" />
 
-        <TextView
-            android:id="@+id/subOne"
-            android:textSize="16dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/materi_one"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:text="@string/sub_one"/>
+    <ListView
+        android:id="@+id/materi_one"
+        android:layout_below="@id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_horizontal" />
 
-        <ImageView
-            android:id="@+id/imgSubOne"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subOne"
-            android:src="@drawable/imgsubone"
-            android:paddingLeft="20dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_below="@id/textView"-->
+        <!--android:layout_marginBottom="@dimen/layout_margin_bottom"-->
+        <!--android:layout_marginLeft="@dimen/layout_margin_horizontal"-->
+        <!--android:layout_marginRight="@dimen/layout_margin_horizontal">-->
 
-        <TextView
-            android:id="@+id/subTwo"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubOne"
-            android:text="@string/sub_two"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+        <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
 
-        <ImageView
-            android:id="@+id/imgSubTwo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subTwo"
-            android:src="@drawable/imgsubonetwo"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
 
-        <TextView
-            android:id="@+id/subThre"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubTwo"
-            android:text="@string/sub_thre"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+            <!--<ListView-->
+                <!--android:id="@+id/materi_one"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content" />-->
 
-        <ImageView
-            android:id="@+id/imgSubThre"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subThre"
-            android:src="@drawable/imgsubonethre"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            <!--<TextView-->
+                <!--android:id="@+id/subOne"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/materi_one"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_one"-->
+                <!--android:textSize="16dp" />-->
 
-        <TextView
-            android:id="@+id/subFour"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubThre"
-            android:text="@string/sub_four"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubOne"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subOne"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:paddingTop="20dp"-->
+                <!--android:src="@drawable/imgsubone" />-->
 
-        <ImageView
-            android:id="@+id/imgSubFour"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subFour"
-            android:src="@drawable/imgsubonefour"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            <!--<TextView-->
+                <!--android:id="@+id/subTwo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubOne"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_two"-->
+                <!--android:textSize="14dp" />-->
 
-        <TextView
-            android:id="@+id/subFive"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubFour"
-            android:text="@string/sub_five"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubTwo"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subTwo"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsubonetwo" />-->
 
-        <ImageView
-            android:id="@+id/imgSubFive"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subFive"
-            android:src="@drawable/imgsubonefive"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            <!--<TextView-->
+                <!--android:id="@+id/subThre"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubTwo"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_thre"-->
+                <!--android:textSize="14dp" />-->
 
-        <TextView
-            android:id="@+id/subSix"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubFive"
-            android:text="@string/sub_six"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubThre"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subThre"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsubonethre" />-->
 
-        <ImageView
-            android:id="@+id/imgSubSix"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subSix"
-            android:src="@drawable/imgsubonesix"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            <!--<TextView-->
+                <!--android:id="@+id/subFour"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubThre"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_four"-->
+                <!--android:textSize="14dp" />-->
 
-        <TextView
-            android:id="@+id/subSeven"
-            android:textSize="14dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/imgSubSix"
-            android:text="@string/sub_seven"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            />
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubFour"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subFour"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsubonefour" />-->
 
-        <ImageView
-            android:id="@+id/imgSubSeven"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/subSeven"
-            android:src="@drawable/imgsuboneseven"
-            android:paddingLeft="20dp"
-            android:paddingBottom="30dp"
-            android:layout_centerHorizontal="true"
-            />
+            <!--<TextView-->
+                <!--android:id="@+id/subFive"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubFour"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_five"-->
+                <!--android:textSize="14dp" />-->
 
-        <Button
-            android:id="@+id/buttonBack"
-            android:layout_margin="5dp"
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:background="@drawable/back"
-            android:onClick="funcBack"/>
-    </RelativeLayout>
-</ScrollView>
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubFive"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subFive"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsubonefive" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/subSix"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubFive"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_six"-->
+                <!--android:textSize="14dp" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubSix"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subSix"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsubonesix" />-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/subSeven"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/imgSubSix"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:text="@string/sub_seven"-->
+                <!--android:textSize="14dp" />-->
+
+            <!--<ImageView-->
+                <!--android:id="@+id/imgSubSeven"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/subSeven"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:paddingBottom="30dp"-->
+                <!--android:paddingLeft="20dp"-->
+                <!--android:src="@drawable/imgsuboneseven" />-->
+
+
+        <!--</RelativeLayout>-->
+    <!--</ScrollView>-->
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
+        android:background="@drawable/back"
+        android:onClick="funcBack" />
+
+</RelativeLayout>

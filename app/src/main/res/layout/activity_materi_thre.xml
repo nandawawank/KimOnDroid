@@ -7,22 +7,32 @@
     android:background="@drawable/papan"
     tools:context="com.madwak.kimondroid.MateriThreActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/layout_margin_vertical"
+        android:layout_centerHorizontal="true"
+        android:text="@string/descMateriThre"
+        android:textSize="30sp" />
+
     <ListView
         android:id="@+id/materi_thre"
+        android:layout_below="@id/textView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="20dp"/>
+        android:layout_marginBottom="@dimen/layout_margin_bottom"
+        android:layout_marginLeft="@dimen/layout_margin_horizontal"
+        android:layout_marginRight="@dimen/layout_margin_horizontal" />
 
     <Button
         android:id="@+id/buttonBack"
-        android:layout_margin="5dp"
-        android:layout_width="60dp"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
         android:background="@drawable/back"
-        android:onClick="funcBack"/>
+        android:onClick="funcBack" />
 
 </RelativeLayout>
