@@ -76,7 +76,7 @@ public class QuizActivity extends AppCompatActivity {
             dialogEnd.setTitle("Quiz berakhir!");
             dialogEnd
                     .setMessage("Selamat! Kamu berhasil menjawab " + myScore / 10 + " pertanyaan \nNilai Kamu: " + myScore)
-                    //.setIcon(R.drawable.right)
+                    .setIcon(R.drawable.ic_stars)
                     .setCancelable(false)
                     .setPositiveButton("Beranda", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int id) {

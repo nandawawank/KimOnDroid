@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         dialogEnd.setTitle("Keluar");
         dialogEnd
                 .setMessage("Apakah Kamu yakin ingin keluar?")
-                //.setIcon(R.drawable.right)
+                .setIcon(R.drawable.ic_exit_to_app)
                 .setCancelable(false)
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
