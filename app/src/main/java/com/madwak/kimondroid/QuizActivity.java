@@ -102,11 +102,11 @@ public class QuizActivity extends AppCompatActivity {
 
         // jika jawaban yang dipilih sama dengan jawaban yang memiliki indeks sama dengan indeks pertanyaan
         if (myAnswer.getText().toString().toLowerCase().equals(jawaban[indexQuest].toLowerCase())) {
-            myScore =+ 10;
-            // displayToast((String) myAnswer.getText() + " jawaban yang benar!");
+            myScore += 10;
+//             displayToast((String) myAnswer.getText() + " jawaban yang benar! Skor: " + myScore);
         }
         else{
-            // displayToast((String) myAnswer.getText() + " jawaban yang salah!");
+//             displayToast((String) myAnswer.getText() + " jawaban yang salah!");
         }
         setQuest();
     }
