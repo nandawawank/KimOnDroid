@@ -21,7 +21,7 @@ public class MateriTwoActivity extends AppCompatActivity {
     ArrayList prgmName;
     public static Integer[] image_two={
             R.drawable.imgmateriduasatu,R.drawable.imgmateriduadua,R.drawable.imgmateriduatiga,R.drawable.imgmateriduaempat,
-            R.drawable.imgmateridualima,R.drawable.imgmateriduaenam};
+            R.drawable.imgmateridualima,R.drawable.imgmateriduaenam,R.drawable.imgmateriduatujuh};
 
     public static String[] materi_two={
            "Koloid mempunyai sifat-sifat yang khas, misalnya menunjukkan efek Tyndall, gerak Brown, dan mempunyai muatan listrik.\n\n" +
@@ -49,8 +49,9 @@ public class MateriTwoActivity extends AppCompatActivity {
            "(misalnya dalam larutan penyangga), pemisahan molekul-molekul protein yang berlainan jenis terjadi.",
            "5. Koagulasi\n" +
            "Koagulasi adalah penggumpalan koloid yang disebabkan oleh penambahan elektrolit atau terjadinya perubahan fisik melalui " +
-           "cara mekanik. Koagulasi dengan penambahan zat kimia Ion yang efektif untuk menggumpalkan koloid ialah ion yang muatannya " +
-           "dengan muatan koloid.\n\n" +
+           "cara mekanik.\n\n" +
+           "Koagulasi dengan penambahan zat kimia " +
+           "Ion yang efektif untuk menggumpalkan koloid ialah ion yang muatannya dengan muatan koloid.\n\n" +
            "Contoh :\n" +
            "a) Koloid Fe(OH)3 dicampur dengan koloid As2S3.\n" +
            "b) Sol emas yang bermuatan negatif dapat dikoagulasikan dengan NaCl, CaCl2, atau AlCl3\n" +
@@ -64,8 +65,8 @@ public class MateriTwoActivity extends AppCompatActivity {
            "Berdasarkan daya tarik-menarik antar partikel fase terdispersi dan medium pendispersinya, sol dibedakan menjadi sol liofil " +
            "dan sol liofob. \nSol liofil adalah sol yang fase terdispersinya mempunyai kemampuan menarik medium pendispersi. Contoh, gelatin " +
            "dalam air dan putih telur dalam air. \nSol liofob adalah sol yang fase terdispersinya tidak menarik medium pendispersi. Contoh " +
-           "As2S3 dalam air, garam sulfida dalam air, dan belerang dalam air.Perbedaan sol  liofil dengan sol liofob dapat dilihat pada " +
-           "tabel berikut."
+           "As2S3 dalam air, garam sulfida dalam air, dan belerang dalam air.",
+           "Perbedaan sol  liofil dengan sol liofob dapat dilihat pada tabel berikut:"
     };
 
     @Override
