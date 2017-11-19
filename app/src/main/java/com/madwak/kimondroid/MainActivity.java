@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
         funcMusic(null);
     }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+        bgMusic.stop();
+        finish();
+    }
+
     public void funcPetunjuk(View view) {
         Intent petunjuk = new Intent(MainActivity.this, PetunjukActivity.class);
         startActivity(petunjuk);
@@ -39,13 +47,11 @@ public class MainActivity extends AppCompatActivity {
     public void funcQuiz(View view) {
         Intent quiz = new Intent(MainActivity.this, QuizActivity.class);
         startActivity(quiz);
-        // finish();
     }
 
     public void funMateri(View view) {
         Intent materi = new Intent(MainActivity.this, MateriActivity.class);
         startActivity(materi);
-        // finish();
     }
 
     public void funcInfo(View view) {
@@ -62,6 +68,7 @@ public class MainActivity extends AppCompatActivity {
         }
         else {
             bgMusic = MediaPlayer.create(MainActivity.this, R.raw.bensound_buddy);
+            bgMusic.setVolume(2, 2);
             bgMusic.start();
             bgMusic.setLooping(true);
             isMusicOn = true;
@@ -78,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
                 .setCancelable(false)
                 .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        finish();
+                        onBackPressed();
                     }
                 })
                 .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
