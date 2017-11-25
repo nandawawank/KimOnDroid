@@ -26,15 +26,20 @@ public class MateriFourActivity extends AppCompatActivity {
             "adalah sebagai berikut:\n\n" +
             "1. Industri kosmetika\n" +
             "Bahan kosmetika seperti foundation, finishing cream, dan deodorant berbentuk koloid dan umumnya sebagai emulsi.",
-            "2. Industri tekstil\n" +
+            "Klasifikasikan produk kosmetik apa saja yang termasuk ke dalam peranan koloid dalam kehidupan sehari-hari\n" +
+            "Jelaskan termasuk ke dalam jenis koloid apa produk kosmetik tersebut!\n"
+            + "\n2. Industri tekstil\n" +
             "Pada proses pencelupan bahan (untuk pewarnaan) yang kurang baik daya serapnya terhadap zat warna dapat menggunakan " +
             "zat warna koloid karena memiliki daya serap yang tinggi sehingga dapat melekat pada tekstil.",
-            "3. Industri sabun dan deterjen\n" +
+            "Industri tekstil apa saja yang menggunakan koloid?\n"
+            + "\n3. Industri sabun dan deterjen\n" +
             "Sabun dan deterjen merupakan emuglator untuk membentuk emulsi antara kotoran (minyak) dengan air.",
-            "4. Kelestarian lingkungan\n" +
+            "Mengapa sabun termasuk ke dalam peran koloid, apa yang menyebabkan hal tersebjut terjadi?\n"
+            + "\n4. Kelestarian lingkungan\n" +
             "Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell. " +
             "Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari " +
-            "cerobong asap pabrik."
+            "cerobong asap pabrik.",
+            "Simpulkanlah materi peranan koloid dalam kehidupan sehari-hari berdasarkan contoh fenomena yang ada\n"
     };
 
     @Override

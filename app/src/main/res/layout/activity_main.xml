@@ -16,7 +16,6 @@
         android:layout_marginTop="30dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@color/white"
         android:text="@string/app_name"
         android:textAlignment="center"
         android:textColor="@color/black"
@@ -32,9 +31,8 @@
         android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:background="@color/white"
         android:text="@string/app_subname"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black"
         android:textSize="15sp"
         android:textStyle="italic" />
 

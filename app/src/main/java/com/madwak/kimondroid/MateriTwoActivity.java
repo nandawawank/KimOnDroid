@@ -29,25 +29,30 @@ public class MateriTwoActivity extends AppCompatActivity {
            "Gejala pemantulan dan pembauran cahaya oleh partikel dispersi sistem koloid disebut efek Tyndall. Gejala ini pertama kali " +
            "ditemukan oleh Michael Faraday kemudian diselidiki lebih lanjut oleh John Tyndall (1820 – 1893), seorang ahli Fisika bangsa " +
            "Inggris. Efek Tyndall dapat digunakan untuk membedakan larutan sejati dari koloid.",
-           "2. Gerak Brown\n" +
+           "Berdasarkan contoh fenomena di atas, silahkan sebutkan dan jelaskan fenomena apa yang ada dikehidupan sehari-hari yang berhubungan " +
+           "dengan efek Tyndall?\n"
+            + "\n2. Gerak Brown\n" +
            "Gerakan partikel koloid yang tidak menentu arahnya ini pertama kali ditemukan oleh seorang sarjana Biologi bernama Robert Brown " +
            "(1773-1859). Gerak Brown adalah gerak lurus partikel-partikel koloid yang arahnya tidak tentu yang disebabkan oleh tumbukan dari " +
            "molekul-molekul medium pendispersi dengan partikel-partikel koloid. Gerak Brown bisa berlangsung terus karena gaya yang bekerja " +
            "pada partikel itu dihasilkan terus menerus oleh tumbukan partikel dengan partikel dan partikel dengan molekul medium pendispersi. " +
            "Hal ini menyebabkan berkurangnya efek gaya gravitasi bumi terhadap partikel fasa dispersi.",
-           "3. Adsorpsi\n" +
+           "Berdasarka kedua gambar di atas bagaimana hubungan tinta yang ditetesi air dengan gerak brown?\n"
+            + "\n3. Adsorpsi\n" +
            "Adsorpsi adalah peristiwa di mana suatu zat menempel pada permukaan zat lain, seperti ion H+ dan OH- dari medium pendispersi. " +
            "Untuk berlangsungnya adsorpsi, minimum harus ada dua macam zat, yaitu zat yang tertarik disebut adsorbat, dan zat yang menarik " +
            "disebut adsorban. Apabila terjadi penyerapan ion pada permukaan partikel koloid maka partikel koloid dapat bermuatan listrik " +
            "yang muatannya ditentukan oleh muatan ion-ion yang mengelilinginya. Contoh: Koloid Fe(OH)3 dalam air menyerap ion hidrogen " +
            "(ion H+) sehinggapartikel bermuatan positif, sedangkan koloid As2S3 menyerap ion hidroksida (ion OH-) sehingga partikel " +
            "bermuatan negatif.",
-           "4. Elektroforesis\n" +
+           "Bagaimana peran tawas dalam kehidupan sehari-hari?\n"
+            + "\n4. Elektroforesis\n" +
            "Elektroforesis adalah peristiwa mengalirnya partikel-partikel koloid menuju elektroda, bergeraknya partikel koloid ke dalam " +
            "satu elektroda menunjukkan bahwa partikel-partikel koloid bermuatan listrik. Elektroforesis dapat dipakai untuk memisahkan " +
            "protein-protein dalam larutan. Muatan pada protein berbeda-beda, tergantung pH. Dengan membuat pH larutan tertentu " +
            "(misalnya dalam larutan penyangga), pemisahan molekul-molekul protein yang berlainan jenis terjadi.",
-           "5. Koagulasi\n" +
+           "Penerapan elektroforesis dalam kehidupan sehari-hari biasanya terdapat dalam bidang indutri mengapa demikian?\n"
+            + "\n5. Koagulasi\n" +
            "Koagulasi adalah penggumpalan koloid yang disebabkan oleh penambahan elektrolit atau terjadinya perubahan fisik melalui " +
            "cara mekanik.\n\n" +
            "Koagulasi dengan penambahan zat kimia " +

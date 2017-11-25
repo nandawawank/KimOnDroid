@@ -35,22 +35,30 @@ public class MateriOneActivity extends AppCompatActivity {
             "atau keruh, seperti berbagai jenis minuman, susu atau pylox. Berdasarkan jenis fasa pendispersi, yaitu zat yang memiliki " +
             "jumlah lebih banyak dan fasa zat yang terdispersi koloid terbagi menjadi delapan macam.\n\n" +
             "1. Fenomena Kabut\n" +
-            "Fase terdispersinya air+medium pendipersinya gas > Aerosol/kabut.",
-            "2. Fenomena Asap\n" +
-            "Fase terdispersinya debu (padat) + medium pendispersinya udara (gas) > Asap.",
-            "3. Buih Cair\n" +
+            "... +medium pendipersinya gas > Aerosol/kabut.",
+            "Berdasarkan fenomena di atas senyawa apa yang menjadi fase terdisfersinya?\n"
+            + "\n2. Fenomena Asap\n" +
+            "Fase terdispersinya debu (padat) + ... > Asap.",
+            "Berdasarkan fenomena di atas senyawa apa yang bertindak sebagai medium pendisfersi?\n"
+            + "\n3. Buih Cair\n" +
             "Fase terdispersinya udara (gas) + medium pendispersinya putih telur (cair) > Buih Krim.",
-            "4. Emulsi\n" +
-            "Fase terdispersinya partikel lemak susu (cair) + medium pendispersinya air (cair) > Air susu.",
-            "5. Sol Cair\n" +
+            "Selain buih krim sebutkan contoh buih cari berdasarkan fase terdisfersi dan medium pendisfersi?\n"
+            + "\n4. Emulsi\n" +
+            "Fase terdispersinya partikel lemak susu (cair) + ... > Air susu.",
+            "Berdasarkan media di atas apa yang menjadi medium pendisfersi susu?\n"
+            + "\n5. Sol Cair\n" +
             "Fase terdispersinya resin/latex (padat) + medium pendispersinya solvent hidrokarbon (cair) > Cat.",
-            "6. Buih Padat\n" +
+            "Kenapa latek(padat) bisa dijadikan bahan pembuat cat air?\n"
+            + "\n6. Buih Padat\n" +
             "Fase terdispersinya udara (gas) + medium pendispersinya gelatin (padat) > Marshmallow.",
-            "7. Emulsi Padat\n" +
-            "Fase terdispersinya susu (cair) + medium pendispersinya lemak hewan padat > Mentega.",
-            "8. Sol Padat\n" +
-            "Fase terdispersinya pasir kuarsa (padat) + CaCO3 (padat) > Kaca.",
-            "Kesimpulan\n" +
+            "Selain marshmellow apa saja dalam kehidupan sehari-hari yang termasuk contoh buih padat?\n"
+            + "\n7. Emulsi Padat\n" +
+            "... + medium pendispersinya lemak hewan padat > Mentega.",
+            "Berdasarkan fenomena di atas senyawa apa yang bertindak sebagai fase terdisfersi?\n"
+            + "\n8. Sol Padat\n" +
+            "Fase terdispersinya padat + padat ...",
+            "Berikan contoh fenomena yang berhubungan dengan sol padat dalam kehidupan sehari-hari?\n"
+            + "\nKesimpulan\n" +
             "Berdasarkan fenomena di atas, dapat disimpulkan bahwa:"
     };
 

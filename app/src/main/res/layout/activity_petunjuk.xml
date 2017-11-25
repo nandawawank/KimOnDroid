@@ -30,9 +30,53 @@
             android:layout_height="match_parent">
 
             <Button
+                android:id="@+id/btnPetunjuk"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:drawableStart="@drawable/ic_help"
+                android:drawableLeft="@drawable/ic_help"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Petunjuk" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnPetunjuk"
+                android:layout_alignBaseline="@id/btnPetunjuk"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi petunjuk aplikasi KimOnDro"/>
+
+
+            <Button
+                android:id="@+id/btnQuiz"
+                android:layout_width="@dimen/width_button_petunjuk"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnPetunjuk"
+                android:padding="10dp"
+                android:background="@color/colorPrimary"
+                android:drawableStart="@drawable/ic_videogame"
+                android:drawableLeft="@drawable/ic_videogame"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Quiz" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnQuiz"
+                android:layout_alignBaseline="@id/btnQuiz"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi quiz edukasi dan evaluasi pembelajaran"/>
+
+
+            <Button
                 android:id="@+id/btnMateri"
                 android:layout_width="@dimen/width_button_petunjuk"
                 android:layout_height="wrap_content"
+                android:layout_below="@id/btnQuiz"
                 android:padding="10dp"
                 android:background="@color/colorAccent"
                 android:drawableStart="@drawable/materi"
@@ -50,52 +94,10 @@
                 android:text="Berisi halaman materi "/>
 
             <Button
-                android:id="@+id/btnQuiz"
-                android:layout_width="@dimen/width_button_petunjuk"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btnMateri"
-                android:padding="10dp"
-                android:background="@color/colorPrimary"
-                android:drawableStart="@drawable/ic_videogame"
-                android:drawableLeft="@drawable/ic_videogame"
-                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
-                android:text="Quiz" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/left_margin_petunjuk"
-                android:layout_toRightOf="@id/btnQuiz"
-                android:layout_alignBaseline="@id/btnQuiz"
-                android:textSize="@dimen/textsize_materi"
-                android:text="Berisi quiz edukasi dan evaluasi pembelajaran"/>
-
-            <Button
-                android:id="@+id/btnPetunjuk"
-                android:layout_width="@dimen/width_button_petunjuk"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/btnQuiz"
-                android:padding="10dp"
-                android:background="@color/colorPrimaryDark"
-                android:drawableStart="@drawable/ic_help"
-                android:drawableLeft="@drawable/ic_help"
-                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
-                android:text="Petunjuk" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/left_margin_petunjuk"
-                android:layout_toRightOf="@id/btnPetunjuk"
-                android:layout_alignBaseline="@id/btnPetunjuk"
-                android:textSize="@dimen/textsize_materi"
-                android:text="Berisi petunjuk aplikasi KimOnDro"/>
-
-            <Button
                 android:id="@+id/btnMateri1"
                 android:layout_width="@dimen/width_button_petunjuk"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btnPetunjuk"
+                android:layout_below="@id/btnMateri"
                 android:padding="10dp"
                 android:background="@color/colorAccent"
                 android:drawableStart="@drawable/materi"
