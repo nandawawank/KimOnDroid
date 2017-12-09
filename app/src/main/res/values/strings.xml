@@ -10,6 +10,7 @@
     <string name="materi_4"> Materi 4</string>
     <string name="descMateriFour">Peranan Koloid</string>
     <string name="app_subname">Media Pembelajaran Sistem Koloid</string>
+    <string name="materi_pengantar">Sistem koloid terdiri atas fase terdisfersi dengan ukuran tertentu dalam medium pendisfersi. Ukuran partikel koloid berkisar antara 1-100 nm. Zat yang didispersikan disebut fase pendisfersi, sedangkan medium yang digunakan untuk mendisfersikan disebut medium pendisfersi. Sistem koloid berbeda dengan larutan dan suspensi. Secara umum, ukuran larutan kurang dari 1nm dan suspensi lebih dari 100nm. Jadi, ukuran partikel koloid berada diantara ukuran partikel larutan dan suspensi.  Perbedaan larutan, koloid, dan suspensi:</string>
 
     <string-array name="materi_tiga">
         <item>

@@ -8,11 +8,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static java.lang.System.*;
@@ -30,8 +33,13 @@ public class QuizActivity extends AppCompatActivity {
             "Peristiwa penghamburan partikel koloid oleh cahaya adalah...",
             "Contoh sistem koloid dari fase terdispersi padat dalam pendispersi cair adalah..."};
     String[] jawaban = { "Koloid", "Aerosol", "Buih", "Adsorbsi", "Koagulasi", "Cara Kondensasi", "Kondensasi dan Dispersi", "Mekanik dan Kimia", "Efek Tyndall", "Tinta" };
+    String[] tanyajawab = new String[10];
 
     List history = new ArrayList();
+    ArrayAdapter<String> listPembahasan;
+    ListView pembahasan;
+    Button exit;
+
     TextView tvQuestion;
     Button myAnswer;
 
@@ -46,8 +54,15 @@ public class QuizActivity extends AppCompatActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_quiz);
 
+        exit = (Button) findViewById(R.id.buttonBack);
+        pembahasan = (ListView) findViewById(R.id.pembahasan);
         tvQuestion = (TextView) findViewById(R.id.tvQuestion);
         setQuest();
+
+        for (int i=0; i<pertanyaan.length; i++) {
+            tanyajawab[i] = pertanyaan[i] + " " + jawaban[i];
+        }
+        listPembahasan = new ArrayAdapter<String>(this, R.layout.activity_pembahasan, tanyajawab);
     }
 
     void setQuest() {
@@ -74,24 +89,53 @@ public class QuizActivity extends AppCompatActivity {
             // jika permainan selesai maka akan ditampilkan dialog quiz selesai dan menampilkan nilai yang diperoleh
             AlertDialog.Builder dialogEnd = new  AlertDialog.Builder(this);
             dialogEnd.setTitle("Quiz berakhir!");
-            dialogEnd
-                    .setMessage("Selamat! Kamu berhasil menjawab " + myScore / 10 + " pertanyaan \nNilai Kamu: " + myScore)
-                    .setIcon(R.drawable.ic_stars)
-                    .setCancelable(false)
-                    .setPositiveButton("Beranda", new DialogInterface.OnClickListener() {
-                        public void onClick(DialogInterface dialog, int id) {
-                            finish();
-                        }
-                    })
-                    .setNegativeButton("Ulang Kuis", new DialogInterface.OnClickListener() {
-                        @Override
-                        public void onClick(DialogInterface dialog, int id) {
-                            totalQuest = 0;
-                            history.clear();
-                            setQuest();
-                            dialog.cancel();
-                        }
-                    });
+            if (myScore >= 70) {
+                dialogEnd
+                        .setMessage("Selamat! Kamu berhasil menjawab " + myScore / 10 + " pertanyaan \nNilai Kamu: " + myScore)
+                        .setIcon(R.drawable.ic_stars)
+                        .setCancelable(false)
+                        .setPositiveButton("Beranda", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("Ulang Kuis", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                totalQuest = 0;
+                                history.clear();
+                                setQuest();
+                                dialog.cancel();
+                            }
+                        })
+                        .setNeutralButton("Pembahasan", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                exit.setVisibility(View.VISIBLE);
+                                pembahasan.setVisibility(View.VISIBLE);
+                                pembahasan.setAdapter(listPembahasan);
+                            }
+                        });
+            }
+            else {
+                dialogEnd
+                        .setMessage("Selamat! Kamu berhasil menjawab " + myScore / 10 + " pertanyaan \nNilai Kamu: " + myScore)
+                        .setIcon(R.drawable.ic_stars)
+                        .setCancelable(false)
+                        .setPositiveButton("Beranda", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int id) {
+                                finish();
+                            }
+                        })
+                        .setNegativeButton("Ulang Kuis", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int id) {
+                                totalQuest = 0;
+                                history.clear();
+                                setQuest();
+                                dialog.cancel();
+                            }
+                        });
+            }
             AlertDialog alertDialog = dialogEnd.create();
             alertDialog.show();
         }
@@ -113,5 +157,9 @@ public class QuizActivity extends AppCompatActivity {
 
     public void displayToast(String message) {
         Toast.makeText(getApplicationContext(), message, Toast.LENGTH_SHORT).show();
+    }
+
+    public void funcBack(View view) {
+        finish();
     }
 }
