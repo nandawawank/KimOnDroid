@@ -47,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:layout_below="@id/textView2"
-                android:text="Materi:\nDenda Mukti Wiguna\nwigunadenda1@gmail.com\n\nPengembang:\nAhmad Tantowi\nNanda Wawan K\n\nMusik:\nhttps://bensound.com\n"
+                android:text="Materi:\nDenda Mukti Wiguna\nwigunadenda1@gmail.com\n\nReferensi:\nAchmad, Hiskia. (2001). Penuntun Belajar Kimia Dasar Kimia Larutan. Bandung: PT. Citra Aditya Bakti.\nBrady and James, E. (1999). Kimia Universitas Asas dan Struktur Jilid 1 Edisi 5. Jakarta: Binarupa Askara.\n\nPengembang:\nAhmad Tantowi\nNanda Wawan K\n\nMusik:\nhttps://bensound.com\n"
                 android:textColor="@color/colorAccent"
                 android:textStyle="bold"
                 android:textSize="16sp" />
