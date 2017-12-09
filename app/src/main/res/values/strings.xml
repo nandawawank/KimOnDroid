@@ -11,6 +11,21 @@
     <string name="descMateriFour">Peranan Koloid</string>
     <string name="app_subname">Media Pembelajaran Sistem Koloid</string>
     <string name="materi_pengantar">Sistem koloid terdiri atas fase terdisfersi dengan ukuran tertentu dalam medium pendisfersi. Ukuran partikel koloid berkisar antara 1-100 nm. Zat yang didispersikan disebut fase pendisfersi, sedangkan medium yang digunakan untuk mendisfersikan disebut medium pendisfersi. Sistem koloid berbeda dengan larutan dan suspensi. Secara umum, ukuran larutan kurang dari 1nm dan suspensi lebih dari 100nm. Jadi, ukuran partikel koloid berada diantara ukuran partikel larutan dan suspensi.  Perbedaan larutan, koloid, dan suspensi:</string>
+    <string name="kompetensi">
+        Standar Kompetensi:
+        \nMenjelaskan sistem koloid dan sifat koloid serta penerapannya dalam kehidupan sehari-hari.
+        \n\nKompetensi Dasar:
+        \n1. Membuat berbagai sistem koloid dengan bahan-bahan yang ada di sekitarnya.
+        \n2. Mengelompokkan sifat-sifat koloid dan penerapannya daam kehidupan sehari-hari.
+        \n\nIndikator:
+        \n1. Mengklasifikasikan suspense, larutan sejati, dan koloid.
+        \n2. Mengelompokkan jenis koloid berdasarkan fase terdisfersi dan fase pendisfersi.
+        \n3. Mendeskripsikan sifat-sifat koloid (efek tyndall, gerak brown, dialysis, elektroforesis, dan koagulasi).
+        \n4. Menjelaskan koloid liofil dan liofob.
+        \n5. Mendeskripsikan peranan koloid di industry dan kehidupan sehari-hari.
+        \n6.Menjelaskan proses pembuatan koloid.
+        \n
+    </string>
 
     <string-array name="materi_tiga">
         <item>

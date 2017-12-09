@@ -54,6 +54,12 @@ public class MainActivity extends AppCompatActivity {
         startActivity(materi);
     }
 
+
+    public void funcKompetensi(View view) {
+        Intent kompetensi = new Intent(MainActivity.this, KompetensiActivity.class);
+        startActivity(kompetensi);
+    }
+
     public void funcInfo(View view) {
         Intent info = new Intent(MainActivity.this, InfoActivity.class);
         startActivity(info);

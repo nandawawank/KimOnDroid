@@ -12,8 +12,8 @@
         android:layout_width="270dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:gravity="center"
         android:layout_marginTop="30dp"
+        android:gravity="center"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:text="@string/app_name"
@@ -24,9 +24,9 @@
 
     <TextView
         android:id="@+id/txtMiniTitle"
-        android:layout_below="@id/txtTitle"
         android:layout_width="270dp"
         android:layout_height="wrap_content"
+        android:layout_below="@id/txtTitle"
         android:layout_centerHorizontal="true"
         android:gravity="center"
         android:paddingLeft="10dp"
@@ -36,78 +36,98 @@
         android:textSize="15sp"
         android:textStyle="italic" />
 
-    <Button
-        android:id="@+id/btnMateri"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="5dp"
-        android:padding="10dp"
-        android:layout_centerVertical="true"
-        android:background="@color/colorAccent"
-        android:drawableStart="@drawable/materi"
-        android:drawableLeft="@drawable/materi"
-        android:text="Materi"
-        android:onClick="funMateri" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical">
 
-    <Button
-        android:id="@+id/btnQuiz"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnMateri"
-        android:layout_marginLeft="80dp"
-        android:layout_marginBottom="5dp"
-        android:padding="10dp"
-        android:background="@color/colorPrimary"
-        android:drawableStart="@drawable/ic_videogame"
-        android:drawableLeft="@drawable/ic_videogame"
-        android:text="Quiz"
-        android:onClick="funcQuiz" />
+        <Button
+            android:id="@+id/btnKompetensi"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/materi"
+            android:drawableStart="@drawable/materi"
+            android:onClick="funcKompetensi"
+            android:padding="10dp"
+            android:text="Kompetensi" />
 
-    <Button
-        android:id="@+id/btnPetunjuk"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/btnQuiz"
-        android:layout_marginLeft="140dp"
-        android:layout_marginBottom="5dp"
-        android:padding="10dp"
-        android:background="@color/colorPrimaryDark"
-        android:drawableStart="@drawable/ic_help"
-        android:drawableLeft="@drawable/ic_help"
-        android:text="Petunjuk"
-        android:onClick="funcPetunjuk" />
+        <Button
+            android:id="@+id/btnMateri"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnKompetensi"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="70dp"
+            android:background="@color/colorAccent"
+            android:drawableLeft="@drawable/materi"
+            android:drawableStart="@drawable/materi"
+            android:onClick="funMateri"
+            android:padding="10dp"
+            android:text="Materi" />
+
+        <Button
+            android:id="@+id/btnQuiz"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnMateri"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="120dp"
+            android:background="@color/colorPrimary"
+            android:drawableLeft="@drawable/ic_videogame"
+            android:drawableStart="@drawable/ic_videogame"
+            android:onClick="funcQuiz"
+            android:padding="10dp"
+            android:text="Quiz" />
+
+        <Button
+            android:id="@+id/btnPetunjuk"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/btnQuiz"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="170dp"
+            android:background="@color/colorPrimaryDark"
+            android:drawableLeft="@drawable/ic_help"
+            android:drawableStart="@drawable/ic_help"
+            android:onClick="funcPetunjuk"
+            android:padding="10dp"
+            android:text="Petunjuk" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/btnExit"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_margin="5dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_margin="5dp"
         android:background="@drawable/ic_power_settings"
         android:backgroundTint="@color/colorAccent"
-        android:onClick="funcExit"/>
+        android:onClick="funcExit" />
 
     <Button
         android:id="@+id/btnInfo"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
         android:layout_toLeftOf="@id/btnExit"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/ic_info_outline"
         android:backgroundTint="@color/colorPrimary"
-        android:onClick="funcInfo"/>
+        android:onClick="funcInfo" />
 
     <Button
         android:id="@+id/btnMusic"
         android:layout_width="40dp"
         android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
         android:layout_margin="5dp"
         android:layout_toLeftOf="@id/btnInfo"
-        android:layout_alignParentBottom="true"
         android:background="@drawable/ic_volume_up"
-        android:onClick="funcMusic"/>
+        android:onClick="funcMusic" />
 
 </RelativeLayout>

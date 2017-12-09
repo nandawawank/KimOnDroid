@@ -71,12 +71,32 @@
                 android:textSize="@dimen/textsize_materi"
                 android:text="Berisi quiz edukasi dan evaluasi pembelajaran"/>
 
+            <Button
+                android:id="@+id/btnKompetensi"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/btnQuiz"
+                android:padding="10dp"
+                android:background="@color/colorAccent"
+                android:drawableStart="@drawable/materi"
+                android:drawableLeft="@drawable/materi"
+                android:layout_marginBottom="@dimen/bottom_margin_petunjuk"
+                android:text="Kompetensi" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/left_margin_petunjuk"
+                android:layout_toRightOf="@id/btnKompetensi"
+                android:layout_alignBaseline="@id/btnKompetensi"
+                android:textSize="@dimen/textsize_materi"
+                android:text="Berisi informasi Standar Kompetensi, Kompetensi Dasar dan Indikator"/>
 
             <Button
                 android:id="@+id/btnMateri"
                 android:layout_width="@dimen/width_button_petunjuk"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/btnQuiz"
+                android:layout_below="@id/btnKompetensi"
                 android:padding="10dp"
                 android:background="@color/colorAccent"
                 android:drawableStart="@drawable/materi"
