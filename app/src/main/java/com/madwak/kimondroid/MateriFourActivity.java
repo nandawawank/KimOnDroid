@@ -20,7 +20,11 @@ public class MateriFourActivity extends AppCompatActivity {
 
     ArrayList prgmName;
     public static Integer[] image_four={
-            R.drawable.imgmaterisatu,R.drawable.imgmateridua,R.drawable.imgmateritiga,R.drawable.imgmateriempat};
+            R.drawable.imgmaterisatu,
+            R.drawable.imgmateridua,
+            R.drawable.imgmateritiga,
+            R.drawable.imgmateriempat
+    };
     public static String[] materi_four={
             "Dalam kehidupan sehari-hari banyak kegunaan koloid baik langsung maupun tidak langsung. Beberapa kegunaan koloid " +
             "adalah sebagai berikut:\n\n" +
@@ -38,7 +42,7 @@ public class MateriFourActivity extends AppCompatActivity {
             + "\n4. Kelestarian lingkungan\n" +
             "Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell. " +
             "Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari " +
-            "cerobong asap pabrik.",
+            "cerobong asap pabrik.\n" +
             "Simpulkanlah materi peranan koloid dalam kehidupan sehari-hari berdasarkan contoh fenomena yang ada\n"
     };
 
@@ -57,8 +61,7 @@ public class MateriFourActivity extends AppCompatActivity {
     }
 
     public void funcBack(View view) {
-//        Intent intent = new Intent(MateriFourActivity.this, MateriActivity.class);
-//        startActivity(intent);
-        finish();
+        Intent intent = new Intent(MateriFourActivity.this, MateriActivity.class);
+        startActivity(intent);
     }
 }
