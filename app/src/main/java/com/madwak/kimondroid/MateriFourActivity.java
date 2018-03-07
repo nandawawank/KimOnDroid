@@ -38,8 +38,7 @@ public class MateriFourActivity extends AppCompatActivity {
             + "\n4. Kelestarian lingkungan\n" +
             "Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell. " +
             "Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari " +
-            "cerobong asap pabrik.",
-            "Simpulkanlah materi peranan koloid dalam kehidupan sehari-hari berdasarkan contoh fenomena yang ada\n"
+            "cerobong asap pabrik."
     };
 
     @Override
