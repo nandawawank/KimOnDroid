@@ -16,7 +16,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
         android:text="Quiz"
-        android:textSize="30dp"
+        android:textSize="25dp"
         />
 
     <TextView
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:text="Pertanyaan Pertanyaan Pertanyaan"
-        android:textSize="20dp"
+        android:textSize="15dp"
         android:gravity="center" />
 
     <LinearLayout
@@ -56,15 +56,6 @@
             android:layout_height="wrap_content"
             android:text="Buih"
             android:onClick="myAnswer"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/answerRow2"
-        android:layout_below="@id/answerRow1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnAnswer4"
@@ -80,21 +71,22 @@
             android:text="Koagulasi"
             android:onClick="myAnswer"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow2"
+        android:layout_below="@id/answerRow1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
         <Button
             android:id="@+id/btnAnswer6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cara Kondensasi"
             android:onClick="myAnswer"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/answerRow3"
-        android:layout_below="@id/answerRow2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal">
 
         <Button
             android:id="@+id/btnAnswer7"
@@ -109,11 +101,12 @@
             android:layout_height="wrap_content"
             android:text="Mekanik dan Kimia"
             android:onClick="myAnswer"/>
+
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/answerRow4"
-        android:layout_below="@id/answerRow3"
+        android:id="@+id/answerRow3"
+        android:layout_below="@id/answerRow2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
@@ -132,6 +125,62 @@
             android:layout_height="wrap_content"
             android:text="Tinta"
             android:onClick="myAnswer"/>
+
+        <Button
+            android:id="@+id/btnAnswer11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pemecahan Partikel Kasar Menjadi Partikel Koloid"
+            android:onClick="myAnswer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow4"
+        android:layout_below="@id/answerRow3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+         <Button
+            android:id="@+id/btnAnswer12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Elektroforesis"
+            android:onClick="myAnswer"/>
+
+        <Button
+            android:id="@+id/btnAnswer13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adsorpsi"
+            android:onClick="myAnswer"/>
+
+        <Button
+            android:id="@+id/btnAnswer14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Koloid liofil kurang stabil dari koloid liofob"
+            android:onClick="myAnswer"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/answerRow5"
+        android:layout_below="@id/answerRow4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAnswer15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adanya gerak brown berukuran partikel koloid yang membuat gaya gravitasi tidak berpengaruh"
+            android:onClick="myAnswer"/>
+
     </LinearLayout>
 
     <ListView

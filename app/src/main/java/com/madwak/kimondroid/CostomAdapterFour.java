@@ -1,13 +1,13 @@
 package com.madwak.kimondroid;
 
 import android.content.Context;
+import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 /**
  * Created by nandawk on 11/14/17.
@@ -59,6 +59,7 @@ public class CostomAdapterFour extends BaseAdapter{
         holder.tv=(TextView) rowView.findViewById(R.id.materiempat);
         holder.img=(ImageView) rowView.findViewById(R.id.gambarempat);
         holder.tv.setText(result[position]);
+        Linkify.addLinks(holder.tv,Linkify.ALL);
         holder.img.setImageResource(imageId[position]);
 //        rowView.setOnClickListener(new View.OnClickListener() {
 //            @Override

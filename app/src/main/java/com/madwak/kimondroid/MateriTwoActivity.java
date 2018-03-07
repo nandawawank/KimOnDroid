@@ -1,14 +1,11 @@
 package com.madwak.kimondroid;
 
 import android.content.Context;
-import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -29,7 +26,9 @@ public class MateriTwoActivity extends AppCompatActivity {
            "Gejala pemantulan dan pembauran cahaya oleh partikel dispersi sistem koloid disebut efek Tyndall. Gejala ini pertama kali " +
            "ditemukan oleh Michael Faraday kemudian diselidiki lebih lanjut oleh John Tyndall (1820 – 1893), seorang ahli Fisika bangsa " +
            "Inggris. Efek Tyndall dapat digunakan untuk membedakan larutan sejati dari koloid.",
-           "Berdasarkan contoh fenomena di atas, silahkan sebutkan dan jelaskan fenomena apa yang ada dikehidupan sehari-hari yang berhubungan " +
+           "Contoh dari fenomena dari tyndall bisa dilink berikut =\n" +
+           "http://youtu.be/PbnJZW7ogUQ" +
+           "\nBerdasarkan contoh fenomena di atas, silahkan sebutkan dan jelaskan fenomena apa yang ada dikehidupan sehari-hari yang berhubungan " +
            "dengan efek Tyndall?\n"
             + "\n2. Gerak Brown\n" +
            "Gerakan partikel koloid yang tidak menentu arahnya ini pertama kali ditemukan oleh seorang sarjana Biologi bernama Robert Brown " +
@@ -37,6 +36,8 @@ public class MateriTwoActivity extends AppCompatActivity {
            "molekul-molekul medium pendispersi dengan partikel-partikel koloid. Gerak Brown bisa berlangsung terus karena gaya yang bekerja " +
            "pada partikel itu dihasilkan terus menerus oleh tumbukan partikel dengan partikel dan partikel dengan molekul medium pendispersi. " +
            "Hal ini menyebabkan berkurangnya efek gaya gravitasi bumi terhadap partikel fasa dispersi.",
+           "Contoh dari fenomena dari gerak brown bisa dilink berikut =\n" +
+           "http://youtu.be/IvjBIiKtsUs" +
            "Berdasarka kedua gambar di atas bagaimana hubungan tinta yang ditetesi air dengan gerak brown?\n"
             + "\n3. Adsorpsi\n" +
            "Adsorpsi adalah peristiwa di mana suatu zat menempel pada permukaan zat lain, seperti ion H+ dan OH- dari medium pendispersi. " +
@@ -45,12 +46,16 @@ public class MateriTwoActivity extends AppCompatActivity {
            "yang muatannya ditentukan oleh muatan ion-ion yang mengelilinginya. Contoh: Koloid Fe(OH)3 dalam air menyerap ion hidrogen " +
            "(ion H+) sehinggapartikel bermuatan positif, sedangkan koloid As2S3 menyerap ion hidroksida (ion OH-) sehingga partikel " +
            "bermuatan negatif.",
+           "Contoh dari fenomena adsorpsi bisa dilink berikut =\n" +
+           "http://youtu.be/8GZnpUVERHw" +
            "Bagaimana peran tawas dalam kehidupan sehari-hari?\n"
             + "\n4. Elektroforesis\n" +
            "Elektroforesis adalah peristiwa mengalirnya partikel-partikel koloid menuju elektroda, bergeraknya partikel koloid ke dalam " +
            "satu elektroda menunjukkan bahwa partikel-partikel koloid bermuatan listrik. Elektroforesis dapat dipakai untuk memisahkan " +
            "protein-protein dalam larutan. Muatan pada protein berbeda-beda, tergantung pH. Dengan membuat pH larutan tertentu " +
            "(misalnya dalam larutan penyangga), pemisahan molekul-molekul protein yang berlainan jenis terjadi.",
+           "Contoh dari fenomena elektroforesis bisa dilink berikut = \n" +
+           "http://youtu.be/NnBJ9wCKCis" +
            "Penerapan elektroforesis dalam kehidupan sehari-hari biasanya terdapat dalam bidang indutri mengapa demikian?\n"
             + "\n5. Koagulasi\n" +
            "Koagulasi adalah penggumpalan koloid yang disebabkan oleh penambahan elektrolit atau terjadinya perubahan fisik melalui " +
@@ -66,11 +71,15 @@ public class MateriTwoActivity extends AppCompatActivity {
            "partikel koloid yang bermuatan mengalami reaksi dengan muatan lawannya ketika partikel tersebut terbawa oleh air sungai dan " +
            "bertemu dengan air laut yang kaya dengan elektrolit. Hal itu terjadi karena keberadaan ion pasangannya menyebabkan partikel " +
            "koloid berkumpul bersama akibat menghilangkannya tolakan muatan antar partikel.",
+           "Contoh dari fenomena koagulasi bisa dilink berikut =\n" +
+           "http://youtu.be/nmSSz91Mxaw" +
            "6. Liofil dan Liofob\n" +
            "Berdasarkan daya tarik-menarik antar partikel fase terdispersi dan medium pendispersinya, sol dibedakan menjadi sol liofil " +
            "dan sol liofob. \nSol liofil adalah sol yang fase terdispersinya mempunyai kemampuan menarik medium pendispersi. Contoh, gelatin " +
            "dalam air dan putih telur dalam air. \nSol liofob adalah sol yang fase terdispersinya tidak menarik medium pendispersi. Contoh " +
            "As2S3 dalam air, garam sulfida dalam air, dan belerang dalam air.",
+           "Contoh dari fenomena liofil dan liofob bisa dilink berikut = " +
+           "http://youtu.be/OkIyQujnk0g" +
            "Perbedaan sol  liofil dengan sol liofob dapat dilihat pada tabel berikut:"
     };
 

@@ -1,6 +1,7 @@
 package com.madwak.kimondroid;
 
 import android.content.Context;
+import android.text.util.Linkify;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -59,8 +60,8 @@ public class CustomAdapterOne extends BaseAdapter {
         holder.tv = (TextView) rowView.findViewById(R.id.materisatu);
         holder.img = (ImageView) rowView.findViewById(R.id.gambarsatu);
         holder.tv.setText(result[position]);
+        Linkify.addLinks(holder.tv, Linkify.ALL);
         holder.img.setImageResource(imageId[position]);
-
         return rowView;
     }
 }

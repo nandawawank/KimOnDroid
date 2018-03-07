@@ -2,13 +2,11 @@ package com.madwak.kimondroid;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -43,7 +41,9 @@ public class MateriFourActivity extends AppCompatActivity {
             "Untuk mengurangi polusi udara yang disebabkan oleh pabrik-pabrik, digunakan suatu alat yang disebut cotrell. " +
             "Alat ini berfungsi untuk menyerap partikel-partikel koloid yang terdapat dalam gas buangan yang keluar dari " +
             "cerobong asap pabrik.\n" +
-            "Simpulkanlah materi peranan koloid dalam kehidupan sehari-hari berdasarkan contoh fenomena yang ada\n"
+            "Contoh dari fenomena koloid dikehidupan sehari-hari bisa dilink berikut =\n" +
+            "http://youtu.be/3zhkv0n4ekU" +
+            "\nSimpulkanlah materi peranan koloid dalam kehidupan sehari-hari berdasarkan contoh fenomena yang ada!\n"
     };
 
     @Override
