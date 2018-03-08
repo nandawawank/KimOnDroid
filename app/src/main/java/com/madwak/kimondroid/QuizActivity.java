@@ -1,10 +1,9 @@
 package com.madwak.kimondroid;
 
 import android.content.DialogInterface;
-import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -15,14 +14,14 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class QuizActivity extends AppCompatActivity {
 
-    String[] pertanyaan = { "Campuran yang ukuran partikel terdispersinya berada di antara larutan dan suspensi adalah…",
+    String[] pertanyaan = {
+            "Campuran yang ukuran partikel terdispersinya berada di antara larutan dan suspensi adalah…",
             "Sistem koloid dari pertikel padat atau cair yang terdispersi dalam gas adalah…",
             "Sistem koloid dari gas yang terdispersi dalam zat cair adalah...",
             "Peristiwa penyerapan muatan oleh permukaan-permukaan partikel koloid adalah...",
@@ -31,9 +30,22 @@ public class QuizActivity extends AppCompatActivity {
             "Sebutkan beberapa cara pembuatan sistem koloid...",
             "Koagulasi koloid dapat terjadi dengan dua cara...",
             "Peristiwa penghamburan partikel koloid oleh cahaya adalah...",
-            "Contoh sistem koloid dari fase terdispersi padat dalam pendispersi cair adalah..."};
-    String[] jawaban = { "Koloid", "Aerosol", "Buih", "Adsorbsi", "Koagulasi", "Cara Kondensasi", "Kondensasi dan Dispersi", "Mekanik dan Kimia", "Efek Tyndall", "Tinta" };
-    String[] tanyajawab = new String[10];
+            "Contoh sistem koloid dari fase terdispersi padat dalam pendispersi cair adalah...",
+            "Jelaskan apa yang dimaksud dengan istilah dispersi koloid...",
+            "Partikel koloid bermuatan positif akan bergerak menuju kutub negatif (katode) partikel koloid yang bermuatan\n"+
+            "negatif akan bergerak ke arah kutub positif (anode). Fenomena koloid apa yang dimaksud?",
+            "Partikel-partikel koloid bersifat stabil dengan adanya muatan listrik. Jika muatannya hilang, maka partikel-partikel\n" +
+            "koloid dapat saling bergabung membentuk gumpalan karena gravitasi, maka gumpalan itu akan mengendap. contoh sifat koloid apa yang dimaksud ...",
+            "Perbedaan koloid liofil dan liofob...",
+            "Jelaskan mengapa dispersi koloid stabil atau tidak mudah terkoagulasi..."
+    };
+    String[] jawaban = {
+            "Koloid", "Aerosol", "Buih", "Adsorbsi", "Koagulasi",
+            "Cara Kondensasi", "Kondensasi dan Dispersi", "Mekanik dan Kimia", "Efek Tyndall", "Tinta",
+            "Pemecahan Partikel Kasar Menjadi Partikel Koloid", "Elektroforesis", "Adsorpsi","Koloid liofil kurang stabil dari koloid liofob",
+            "Adanya gerak brown berukuran partikel koloid yang membuat gaya gravitasi tidak berpengaruh"
+    };
+    String[] tanyajawab = new String[15];
 
     List history = new ArrayList();
     ArrayAdapter<String> listPembahasan;
@@ -66,7 +78,7 @@ public class QuizActivity extends AppCompatActivity {
     }
 
     void setQuest() {
-        if (totalQuest < 10) {
+        if (totalQuest < 15) {
             // mengambil indeks untuk pertanyaan secara acak dari 0 - 9
             indexQuest = (int) (Math.random() * pertanyaan.length);
 
